@@ -1,0 +1,47 @@
+$detailcolor: rgb(67 32 74);
+$generalfont: Upheaval;
+$fontcolor: rgb(255, 255, 255);
+$bgcolor: rgb(234 40 75);
+
+@font-face {
+    font-family: Minecraft;
+    src: url(Minecraft.ttf);
+
+    font-family: Upheaval;
+    src: url(upheavtt.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $bgcolor
+}
+
+header {
+
+    font-family: $generalfont;
+    font-size: 48px;
+    background-color: $detailcolor;
+    color: $fontcolor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+
+}
+
+#title {
+
+    padding-bottom: 30px;
+}
+
+.menu {
+
+width: 300px;
+height: 100%;
+
+}
