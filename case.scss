@@ -14,9 +14,11 @@ $bgcolor: rgb(234 40 75);
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
     background-color: $bgcolor
 }
 
@@ -26,22 +28,29 @@ header {
     font-size: 48px;
     background-color: $detailcolor;
     color: $fontcolor;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
 
 }
 
 #title {
-
     padding-bottom: 30px;
+    padding-left: 250px;
 }
 
 .menu {
 
 width: 300px;
 height: 100%;
+background-color: $detailcolor;
+padding: 40px /*parte de cima*/ 0 /*lado direito*/ 40px /*em baixo*/ 1% /*lado esquerdo*/;
 
+}
+ 
+.menu-button {
+    width: 100%;
+    padding: 10px;
 }
